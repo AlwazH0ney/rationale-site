@@ -1,0 +1,988 @@
+{
+  "generated_at": "2026-10-01T12:29:23+00:00",
+  "calibration": {
+    "illustrative": true,
+    "note": "Illustrative curve. Real reliability data lands when the 43-criterion annotation set is labelled and calibrators are fitted.",
+    "points": [
+      {
+        "confidence": 0.05,
+        "raw": 0.1,
+        "calibrated": 0.06
+      },
+      {
+        "confidence": 0.15,
+        "raw": 0.12,
+        "calibrated": 0.16
+      },
+      {
+        "confidence": 0.25,
+        "raw": 0.2,
+        "calibrated": 0.24
+      },
+      {
+        "confidence": 0.35,
+        "raw": 0.26,
+        "calibrated": 0.36
+      },
+      {
+        "confidence": 0.45,
+        "raw": 0.31,
+        "calibrated": 0.44
+      },
+      {
+        "confidence": 0.55,
+        "raw": 0.38,
+        "calibrated": 0.56
+      },
+      {
+        "confidence": 0.65,
+        "raw": 0.47,
+        "calibrated": 0.63
+      },
+      {
+        "confidence": 0.75,
+        "raw": 0.55,
+        "calibrated": 0.76
+      },
+      {
+        "confidence": 0.85,
+        "raw": 0.66,
+        "calibrated": 0.84
+      },
+      {
+        "confidence": 0.95,
+        "raw": 0.78,
+        "calibrated": 0.93
+      }
+    ]
+  },
+  "coverage_risk": {
+    "illustrative": true,
+    "note": "Illustrative curve. Real coverage-risk data needs ground-truth labels.",
+    "points": [
+      {
+        "coverage": 0.1,
+        "raw": 0.02,
+        "calibrated": 0.0
+      },
+      {
+        "coverage": 0.2,
+        "raw": 0.03,
+        "calibrated": 0.01
+      },
+      {
+        "coverage": 0.3,
+        "raw": 0.04,
+        "calibrated": 0.02
+      },
+      {
+        "coverage": 0.4,
+        "raw": 0.05,
+        "calibrated": 0.03
+      },
+      {
+        "coverage": 0.5,
+        "raw": 0.07,
+        "calibrated": 0.04
+      },
+      {
+        "coverage": 0.6,
+        "raw": 0.09,
+        "calibrated": 0.06
+      },
+      {
+        "coverage": 0.7,
+        "raw": 0.11,
+        "calibrated": 0.08
+      },
+      {
+        "coverage": 0.8,
+        "raw": 0.14,
+        "calibrated": 0.1
+      },
+      {
+        "coverage": 0.9,
+        "raw": 0.17,
+        "calibrated": 0.14
+      },
+      {
+        "coverage": 1.0,
+        "raw": 0.21,
+        "calibrated": 0.21
+      }
+    ]
+  },
+  "evidence": {
+    "illustrative": false,
+    "note": "Real: every criterion judgment in the TCGA-05-4418-derived Phase 3 run, grouped by the patient feature it cites.",
+    "tree": {
+      "name": "TCGA-05-4418-derived",
+      "children": [
+        {
+          "name": "no feature cited",
+          "children": [
+            {
+              "name": "inc 3 · Adequate organ function.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #3",
+                    "criterion_text": "Adequate organ function.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 5 · Life expectancy of at least 3 months.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #5",
+                    "criterion_text": "Life expectancy of at least 3 months.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 2 · Recent major surgery within 4 weeks.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #2",
+                    "criterion_text": "Recent major surgery within 4 weeks.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 3 · History of intestinal disease or major gastric surgery that woul",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #3",
+                    "criterion_text": "History of intestinal disease or major gastric surgery that would impair drug absorption.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 4 · Serious cardiac illness including congestive heart failure NYHA ",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #4",
+                    "criterion_text": "Serious cardiac illness including congestive heart failure NYHA class III or IV.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 0 · Subject has provided informed consent prior to initiation of any",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #0",
+                    "criterion_text": "Subject has provided informed consent prior to initiation of any study specific activities/procedures.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 4 · Measurable disease per Response Evaluation Criteria in Solid Tum",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #4",
+                    "criterion_text": "Measurable disease per Response Evaluation Criteria in Solid Tumors 1.1 (RECIST 1.1) criteria.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 6 · Life expectancy of >3 months, in the opinion of the investigator",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #6",
+                    "criterion_text": "Life expectancy of >3 months, in the opinion of the investigator.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 7 · Adequate organ function.",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #7",
+                    "criterion_text": "Adequate organ function.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 0 · Active infection requiring systemic therapy.",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #0",
+                    "criterion_text": "Active infection requiring systemic therapy.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 1 · Known positive test for human immunodeficiency virus, hepatitis ",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #1",
+                    "criterion_text": "Known positive test for human immunodeficiency virus, hepatitis C virus, chronic active hepatitis B infection.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 2 · Myocardial infarction within 6 months of study day 1, symptomati",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #2",
+                    "criterion_text": "Myocardial infarction within 6 months of study day 1, symptomatic congestive heart failure (New York Heart Association > class II), unstable angina, or unstable cardiac arrhythmia requiring medication.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 3 · Gastrointestinal (GI) tract disease causing the inability to tak",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #3",
+                    "criterion_text": "Gastrointestinal (GI) tract disease causing the inability to take oral medication, malabsorption syndrome, requirement for intravenous alimentation, uncontrolled inflammatory GI disease.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 5 · Anti-tumor therapy within 28 days of study day 1.",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #5",
+                    "criterion_text": "Anti-tumor therapy within 28 days of study day 1.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 6 · Therapeutic or palliative radiation therapy within 4 weeks of st",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #6",
+                    "criterion_text": "Therapeutic or palliative radiation therapy within 4 weeks of study day 1.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 6 · Measurable disease per RECIST v1.1.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #6",
+                    "criterion_text": "Measurable disease per RECIST v1.1.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 7 · Adequate hematologic, hepatic, and renal function.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #7",
+                    "criterion_text": "Adequate hematologic, hepatic, and renal function.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 1 · Interstitial lung disease or pneumonitis.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "exclusion #1",
+                    "criterion_text": "Interstitial lung disease or pneumonitis.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 4 · Serious cardiac disease including QTc > 470 ms.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "exclusion #4",
+                    "criterion_text": "Serious cardiac disease including QTc > 470 ms.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "none"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "treatment history",
+          "children": [
+            {
+              "name": "inc 2 · Prior treatment with at least one systemic anti-cancer therapy f",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #2",
+                    "criterion_text": "Prior treatment with at least one systemic anti-cancer therapy for advanced disease including an anti-PD-1/PD-L1 antibody (unless contraindicated).",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history line 1: pembrolizumab"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 1 · Prior treatment with a KRAS G12C-specific inhibitor.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #1",
+                    "criterion_text": "Prior treatment with a KRAS G12C-specific inhibitor.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history line 1: carboplatin + pemetrexed + pembrolizumab"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 4 · Prior therapy with a direct and selective KRAS G12C inhibitor.",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #4",
+                    "criterion_text": "Prior therapy with a direct and selective KRAS G12C inhibitor.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history line 1: carboplatin + pemetrexed + pembrolizumab"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 7 · Currently receiving treatment in another investigational device ",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #7",
+                    "criterion_text": "Currently receiving treatment in another investigational device or drug study.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history next line of therapy: 2"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 2 · Prior treatment with a first- or second-generation EGFR TKI.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #2",
+                    "criterion_text": "Prior treatment with a first- or second-generation EGFR TKI.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history line 1: carboplatin + pemetrexed + pembrolizumab"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 3 · Radiographic progression on prior EGFR TKI therapy.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #3",
+                    "criterion_text": "Radiographic progression on prior EGFR TKI therapy.",
+                    "verdict": "not_met",
+                    "decided_by": "rule",
+                    "cited_feature": "rule never_received:egfr_tki"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 2 · Prior treatment with osimertinib or other third-generation EGFR ",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "exclusion #2",
+                    "criterion_text": "Prior treatment with osimertinib or other third-generation EGFR TKI.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "treatment_history line 1: carboplatin + pemetrexed + pembrolizumab"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "age",
+          "children": [
+            {
+              "name": "inc 0 · Histologically confirmed diagnosis of unresectable or metastatic",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #0",
+                    "criterion_text": "Histologically confirmed diagnosis of unresectable or metastatic NSCLC.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "Diagnosis: Lung adenocarcinoma, stage IV"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 6 · Age >= 18 years.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #6",
+                    "criterion_text": "Age >= 18 years.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "age 63"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 1 · Male or female, aged >=18 years.",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #1",
+                    "criterion_text": "Male or female, aged >=18 years.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "age 63, male"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 0 · Histologically or cytologically confirmed NSCLC.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #0",
+                    "criterion_text": "Histologically or cytologically confirmed NSCLC.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "Diagnosis: Lung adenocarcinoma, stage IV"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 4 · Age >= 18 years.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #4",
+                    "criterion_text": "Age >= 18 years.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "age 63"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mutations",
+          "children": [
+            {
+              "name": "inc 1 · Presence of KRAS G12C mutation in tumor tissue.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #1",
+                    "criterion_text": "Presence of KRAS G12C mutation in tumor tissue.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "mutations: KRAS p.G12C"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 2 · Pathologically documented, locally-advanced or metastatic malign",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #2",
+                    "criterion_text": "Pathologically documented, locally-advanced or metastatic malignancy with KRAS p.G12C mutation identified through molecular testing.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "diagnosis: Lung adenocarcinoma, stage IV; mutations: KRAS p.G12C"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 1 · Documented EGFR mutation known to be associated with EGFR TKI se",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #1",
+                    "criterion_text": "Documented EGFR mutation known to be associated with EGFR TKI sensitivity (including exon 19 deletion, L858R, T790M).",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "mutations: KRAS p.G12C"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ECOG",
+          "children": [
+            {
+              "name": "inc 4 · ECOG performance status of 0 or 1.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "inclusion #4",
+                    "criterion_text": "ECOG performance status of 0 or 1.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "ECOG 1"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 5 · Eastern Cooperative Oncology Group (ECOG) Performance Status of ",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #5",
+                    "criterion_text": "Eastern Cooperative Oncology Group (ECOG) Performance Status of <=2.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "ECOG 1"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 5 · ECOG performance status 0-2.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "inclusion #5",
+                    "criterion_text": "ECOG performance status 0-2.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "ECOG 1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "brain metastases",
+          "children": [
+            {
+              "name": "exc 0 · Active brain metastases (patients with treated, stable brain met",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #0",
+                    "criterion_text": "Active brain metastases (patients with treated, stable brain metastases are eligible).",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "brain metastases: no"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "inc 3 · Subjects with active brain metastases from non-brain tumors are ",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "inclusion #3",
+                    "criterion_text": "Subjects with active brain metastases from non-brain tumors are eligible if they have been treated and are without evidence of progression or hemorrhage for at least 4 weeks. Anticonvulsants and steroids are allowed if being administered at stable doses for at least 30 days before study day 1.",
+                    "verdict": "met",
+                    "decided_by": "llm",
+                    "cited_feature": "brain_metastases: no"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 0 · Symptomatic CNS metastases requiring immediate local therapy.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "exclusion #0",
+                    "criterion_text": "Symptomatic CNS metastases requiring immediate local therapy.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "brain metastases: no"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sex",
+          "children": [
+            {
+              "name": "exc 5 · Pregnant or breastfeeding.",
+              "children": [
+                {
+                  "name": "NCT04303780",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT04303780",
+                    "url": "https://clinicaltrials.gov/study/NCT04303780",
+                    "trial_title": "Adagrasib in Previously Treated Patients With NSCLC and KRAS G12C Mutation (KRYSTAL-1)",
+                    "criterion": "exclusion #5",
+                    "criterion_text": "Pregnant or breastfeeding.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "gender: male"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "exc 8 · Female subjects of childbearing potential unwilling to use an ac",
+              "children": [
+                {
+                  "name": "NCT03600883",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03600883",
+                    "url": "https://clinicaltrials.gov/study/NCT03600883",
+                    "trial_title": "Sotorasib in Advanced Solid Tumors With KRAS G12C Mutation (CodeBreaK 100)",
+                    "criterion": "exclusion #8",
+                    "criterion_text": "Female subjects of childbearing potential unwilling to use an acceptable method(s) of effective contraception during treatment.",
+                    "verdict": "not_met",
+                    "decided_by": "llm",
+                    "cited_feature": "gender: male"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "not recorded",
+          "children": [
+            {
+              "name": "exc 3 · Concurrent malignancy requiring active therapy.",
+              "children": [
+                {
+                  "name": "NCT03778229",
+                  "value": 1,
+                  "source": {
+                    "nct_id": "NCT03778229",
+                    "url": "https://clinicaltrials.gov/study/NCT03778229",
+                    "trial_title": "Osimertinib in EGFR-Mutant NSCLC With Acquired Resistance",
+                    "criterion": "exclusion #3",
+                    "criterion_text": "Concurrent malignancy requiring active therapy.",
+                    "verdict": "unknown",
+                    "decided_by": "llm",
+                    "cited_feature": "prior_malignancy: not recorded"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "run": {
+    "model": "phi4",
+    "hardware": "Tesla T4 (compute 7.5, 14.6 GiB)",
+    "mean_criterion_s": 3.279,
+    "n_criteria": 43,
+    "prompt_version": "3fe32ef28a11"
+  }
+}

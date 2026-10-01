@@ -1,0 +1,20 @@
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+.vercel/
+.env*.local
+
+# python
+__pycache__/
+.venv/
+.pytest_cache/
+
+# local verification artefacts
+.lighthouse/
+screenshots/
+
+# local server logs
+.*.log

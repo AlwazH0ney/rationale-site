@@ -1,0 +1,319 @@
+[
+  {
+    "id": "TCGA-05-4418-derived",
+    "label": "TCGA-05-4418 (derived)",
+    "kind": "tcga-derived",
+    "note": "Mutations from TCGA-05-4418; treatment history constructed for the demo.",
+    "diagnosis": "Lung adenocarcinoma",
+    "stage": "IV",
+    "age": 63,
+    "sex": "male",
+    "ecog": 1,
+    "smoking": "former",
+    "brain_metastases": false,
+    "mutations": [
+      {
+        "gene": "KRAS",
+        "protein_change": "p.G12C",
+        "short": "G12C",
+        "driver": true,
+        "strength": "strong",
+        "vaf": 0.41
+      },
+      {
+        "gene": "STK11",
+        "protein_change": "p.G56V",
+        "short": "G56V",
+        "driver": true,
+        "strength": "standard",
+        "vaf": 0.39
+      },
+      {
+        "gene": "KEAP1",
+        "protein_change": "p.F280Y",
+        "short": "F280Y",
+        "driver": true,
+        "strength": "standard",
+        "vaf": 0.43
+      },
+      {
+        "gene": "RBM10",
+        "protein_change": "p.G17Wfs*4",
+        "short": "G17Wfs*4",
+        "driver": true,
+        "strength": "standard",
+        "vaf": 0.42
+      }
+    ],
+    "tmb": 4.6,
+    "pd_l1": 15.0,
+    "msi": "MSS",
+    "next_line": 2,
+    "timeline": [
+      {
+        "label": "diagnosis",
+        "detail": "stage IV",
+        "kind": "event"
+      },
+      {
+        "label": "line 1",
+        "detail": "carboplatin + pemetrexed + pembrolizumab",
+        "date": "2025-11-10",
+        "kind": "line"
+      },
+      {
+        "label": "progression",
+        "detail": "best response PD",
+        "date": "2026-06-20",
+        "kind": "event"
+      },
+      {
+        "label": "line 2",
+        "detail": "proposed: trial",
+        "kind": "proposed"
+      }
+    ],
+    "profile": {
+      "patient_id": "TCGA-05-4418-derived",
+      "diagnosis": "Lung adenocarcinoma",
+      "stage": "IV",
+      "age_years": 63,
+      "sex": "MALE",
+      "ecog": 1,
+      "smoking_status": "former",
+      "histology": "adenocarcinoma",
+      "brain_metastases": false,
+      "prior_malignancy": null,
+      "mutations": [
+        {
+          "gene": "KRAS",
+          "protein_change": "p.G12C",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.41,
+          "is_hotspot": true,
+          "evidence_score": 5
+        },
+        {
+          "gene": "STK11",
+          "protein_change": "p.G56V",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.39,
+          "is_hotspot": false,
+          "evidence_score": 3
+        },
+        {
+          "gene": "KEAP1",
+          "protein_change": "p.F280Y",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.43,
+          "is_hotspot": false,
+          "evidence_score": 3
+        },
+        {
+          "gene": "RBM10",
+          "protein_change": "p.G17Wfs*4",
+          "variant_class": "Frame_Shift_Ins",
+          "tumor_vaf": 0.42,
+          "is_hotspot": false,
+          "evidence_score": 4
+        }
+      ],
+      "tmb": 4.6,
+      "pd_l1_tps": 15.0,
+      "msi_status": "MSS",
+      "treatment_history": [
+        {
+          "line": 1,
+          "drug": "carboplatin + pemetrexed + pembrolizumab",
+          "start_date": "2025-11-10",
+          "end_date": "2026-06-20",
+          "best_response": "PD",
+          "discontinuation_reason": "progression"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-EGFR-L858R",
+    "label": "Synthetic EGFR L858R",
+    "kind": "synthetic",
+    "note": "Synthetic never-smoker, treatment-naive.",
+    "diagnosis": "Lung adenocarcinoma",
+    "stage": "IV",
+    "age": 54,
+    "sex": "female",
+    "ecog": 0,
+    "smoking": "never",
+    "brain_metastases": false,
+    "mutations": [
+      {
+        "gene": "EGFR",
+        "protein_change": "p.L858R",
+        "short": "L858R",
+        "driver": true,
+        "strength": "strong",
+        "vaf": 0.38
+      },
+      {
+        "gene": "TP53",
+        "protein_change": "p.R273H",
+        "short": "R273H",
+        "driver": true,
+        "strength": "standard",
+        "vaf": 0.35
+      }
+    ],
+    "tmb": 1.8,
+    "pd_l1": 5.0,
+    "msi": "MSS",
+    "next_line": 1,
+    "timeline": [
+      {
+        "label": "diagnosis",
+        "detail": "stage IV",
+        "kind": "event"
+      },
+      {
+        "label": "line 1",
+        "detail": "proposed: trial",
+        "kind": "proposed"
+      }
+    ],
+    "profile": {
+      "patient_id": "SYN-EGFR-L858R",
+      "diagnosis": "Lung adenocarcinoma",
+      "stage": "IV",
+      "age_years": 54,
+      "sex": "FEMALE",
+      "ecog": 0,
+      "smoking_status": "never",
+      "histology": "adenocarcinoma",
+      "brain_metastases": false,
+      "prior_malignancy": null,
+      "mutations": [
+        {
+          "gene": "EGFR",
+          "protein_change": "p.L858R",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.38,
+          "is_hotspot": true,
+          "evidence_score": null
+        },
+        {
+          "gene": "TP53",
+          "protein_change": "p.R273H",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.35,
+          "is_hotspot": false,
+          "evidence_score": null
+        }
+      ],
+      "tmb": 1.8,
+      "pd_l1_tps": 5.0,
+      "msi_status": "MSS",
+      "treatment_history": []
+    }
+  },
+  {
+    "id": "SYN-BRCA1",
+    "label": "Synthetic BRCA1",
+    "kind": "synthetic",
+    "note": "Synthetic. TMB, PD-L1 and brain imaging not recorded.",
+    "diagnosis": "Lung adenocarcinoma",
+    "stage": "IV",
+    "age": 67,
+    "sex": "male",
+    "ecog": 2,
+    "smoking": "former",
+    "brain_metastases": null,
+    "mutations": [
+      {
+        "gene": "BRCA1",
+        "protein_change": "p.C61G",
+        "short": "C61G",
+        "driver": true,
+        "strength": "standard",
+        "vaf": 0.47
+      },
+      {
+        "gene": "TP53",
+        "protein_change": "p.R175H",
+        "short": "R175H",
+        "driver": true,
+        "strength": "strong",
+        "vaf": 0.41
+      }
+    ],
+    "tmb": null,
+    "pd_l1": null,
+    "msi": null,
+    "next_line": 2,
+    "timeline": [
+      {
+        "label": "diagnosis",
+        "detail": "stage IV",
+        "kind": "event"
+      },
+      {
+        "label": "line 1",
+        "detail": "carboplatin + pemetrexed",
+        "date": "2025-09-02",
+        "kind": "line"
+      },
+      {
+        "label": "completed",
+        "detail": "best response PR",
+        "date": "2026-02-10",
+        "kind": "event"
+      },
+      {
+        "label": "line 2",
+        "detail": "proposed: trial",
+        "kind": "proposed"
+      }
+    ],
+    "profile": {
+      "patient_id": "SYN-BRCA1",
+      "diagnosis": "Lung adenocarcinoma",
+      "stage": "IV",
+      "age_years": 67,
+      "sex": "MALE",
+      "ecog": 2,
+      "smoking_status": "former",
+      "histology": "adenocarcinoma",
+      "brain_metastases": null,
+      "prior_malignancy": null,
+      "mutations": [
+        {
+          "gene": "BRCA1",
+          "protein_change": "p.C61G",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.47,
+          "is_hotspot": false,
+          "evidence_score": null
+        },
+        {
+          "gene": "TP53",
+          "protein_change": "p.R175H",
+          "variant_class": "Missense_Mutation",
+          "tumor_vaf": 0.41,
+          "is_hotspot": true,
+          "evidence_score": null
+        }
+      ],
+      "tmb": null,
+      "pd_l1_tps": null,
+      "msi_status": null,
+      "treatment_history": [
+        {
+          "line": 1,
+          "drug": "carboplatin + pemetrexed",
+          "start_date": "2025-09-02",
+          "end_date": "2026-02-10",
+          "best_response": "PR",
+          "discontinuation_reason": "completed"
+        }
+      ]
+    }
+  }
+]

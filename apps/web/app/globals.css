@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page: #f2f0ec;
+  --paper: #ffffff;
+  --cream: #fafaf7;
+  --linen: #f2f0ea;
+  --chalk: #e6e4dd;
+  --fog: #c9c6be;
+  --stone: #8a8780;
+  --slate: #4a4844;
+  --ink: #15150f;
+  --sage: #6b7e73;
+  --sage-soft: #a8b5ac;
+  --sage-ghost: #e9ede9;
+  --card-pad-x: 24px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --card-pad-x: 56px;
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-page font-sans text-body text-slate antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--sage-ghost);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  /* The floating card every page lives in. */
+  .card {
+    @apply mx-4 my-4 max-w-card rounded-[16px] bg-paper shadow-card;
+    padding: 32px var(--card-pad-x) 64px;
+  }
+  @media (min-width: 768px) {
+    .card {
+      @apply mx-auto my-8 rounded-lg;
+      /* keep a 32px gutter until the viewport is wider than the card */
+      width: calc(100% - 64px);
+      padding: 48px var(--card-pad-x) 96px;
+    }
+  }
+
+  /* A full-bleed tinted section inside the card. */
+  .band {
+    margin-left: calc(-1 * var(--card-pad-x));
+    margin-right: calc(-1 * var(--card-pad-x));
+    padding: 64px var(--card-pad-x);
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .viewport-section {
+    min-height: calc(100svh - 160px);
+  }
+
+  .label {
+    @apply text-label lowercase text-stone;
+  }
+
+  .rule-top {
+    @apply border-t border-chalk pt-5;
+  }
+
+  .panel {
+    @apply rounded-md border border-chalk bg-paper;
+  }
+
+  .mono {
+    @apply font-mono text-data;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

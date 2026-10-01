@@ -1,0 +1,14 @@
+{
+  "name": "rationale-site",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "test": "pnpm --filter web test",
+    "mock": "python scripts/build_mock.py"
+  }
+}
